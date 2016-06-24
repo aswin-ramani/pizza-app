@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="postApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Angularjs- Uirouter</title>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <script src="https://code.angularjs.org/1.5.7/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.5.7/angular-resource.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
+    <script src="app.js"></script>
+    <script src="controllers/main.js"></script>
+    <script src="controllers/about.js"></script>
+    <script src="controllers/pizza.js"></script>
+    <script src="controllers/contact.js"></script>
+</head>        
+<body class="container-fluid">
+    <div class="navbar navbar-default">
+    <div class="nav navbar-nav"> 
+    <div class="container">    
+    <a class="navbar-brand" ui-sref="main">Home</a>    
+    <a class="navbar-brand" ui-sref="about">About</a>
+    <a class="navbar-brand" ui-sref="pizzas">Pizza Menu</a>  
+    <a class="navbar-brand" ui-sref="contact">Contact</a>
+    </div>    
+    </div>    
+    </div>    
+
+  
+    
+    <div ui-view></div>
+    
+  
+    
+   
+</body>
+</html>

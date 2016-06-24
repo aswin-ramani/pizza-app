@@ -1,0 +1,42 @@
+<div ng-show="id==1">
+<h3>Classic Cheese</h3>
+<h5 ng-model="toppings">{{Toppings}}</h5>    
+<p>Description here..</p>    
+</div>    
+
+<div ng-show="id==2">
+<h3>Margarita</h3>
+<h5>Topings</h5>    
+<p>Description here..</p>    
+</div>    
+
+<div ng-show="id==3">
+<h3>Paneer</h3>
+<h5>Topings</h5>    
+<p>Description here..</p>    
+</div>    
+
+<div ng-show="id==4">
+<h3>Chicken</h3>
+<h5>Topings</h5>    
+<p>Description here..</p>    
+</div>    
+
+<div ng-show="id==5">
+<h3>Tandoori</h3>
+<h5>Topings</h5>    
+<p>Description here..</p>    
+</div>    
+
+
+<div ng-show="id==6">
+<h3>Choose Your Toppings</h3>
+<div ng-repeat="topping in toppings">    
+<ul>
+  <li>{{ topping }} <button type="submit" ng-click="addPrice()">Add</button></li>    
+</ul>
+   
+</div>
+ <h4> Total : {{ price }} + taxes </h4>
+<button>Proceed to Checkout</button>
+</div>    
