@@ -1,3 +1,3 @@
-app.controller('AboutCtrl', function($scope){
-    
-});
+app.controller('AboutCtrl', ['$scope',function($scope){
+                       
+}]);                             

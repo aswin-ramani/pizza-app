@@ -33,6 +33,19 @@ app.config(['$stateProvider', '$urlRouterProvider',function($stateProvider, $url
         controller: 'PizzaCtrl'
     })
     
+    
+    .state('posts',{
+        url: '/posts',
+        templateUrl: 'views/posts/index.html',
+        controller: 'PostCtrl'
+    })
+    
+    .state('posts_detail',{
+        url:'/posts/:id',
+        templateUrl: 'views/posts/show.html',
+        controller: 'PostCtrl'
+    })
+    
     .state('contact',{
         url:'/contact',
         templateUrl: 'views/contact.html',
